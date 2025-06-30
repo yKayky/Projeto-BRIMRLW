@@ -8,14 +8,14 @@
 body {
   font-family: 'Segoe UI', sans-serif;
   line-height: 1.6;
-  background-color: #000;
+  background-image: linear-gradient( #c02809, #7a2717, #000000);
   color: #c3c4df;
 }
 
 /* Navbar */
 .navbar {
-  background: #FFA726;
-  color: #17161a;
+  background: #000000;
+  color: #000000;
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -47,7 +47,7 @@ height: 48px;
 }
 
 .navbar .menu li a:hover {
-  color: #ffcc00;
+  color: #c02809;
 }
 
 /* Banner */
@@ -61,6 +61,11 @@ height: 48px;
   text-align: center;
 }
 
+.banner-content img{
+  width: 250px;
+  height: 175px;
+  
+}
 .banner-content h2 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
@@ -72,16 +77,17 @@ height: 48px;
 }
 
 .btn {
-  background: #ffcc00;
+  background: #c0280997;
+  border: solid 3px #c02809;
   padding: 0.75rem 1.5rem;
-  color: #111;
+  color: #fffefe;
   text-decoration: none;
   border-radius: 8px;
   transition: background 0.3s ease;
 }
 
 .btn:hover {
-  background: #e6b800;
+  background: #f61f03;
 }
 
 /* Destaques */
@@ -249,4 +255,20 @@ footer {
   object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.sobre img {
+   width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.card img.avl {
+  margin-top: 10px;
+  width: 65px;
+  height: 65px;
+  object-fit: cover;
+  border-radius: 100px;
+ 
 }
