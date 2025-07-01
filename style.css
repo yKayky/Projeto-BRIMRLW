@@ -1,6 +1,7 @@
 :root {
   --cor--preta: #000000;
   --cor--branca: #ffffff;
+  --cor--cinza: #a5a5a7;
 }
 
 
@@ -17,7 +18,6 @@ body {
   color: #c3c4df;
 }
 
-/* Navbar */
 .navbar {
   background: var(--cor--preta);
   color: var(--cor--preta);
@@ -48,14 +48,13 @@ height: 48px;
 .navbar .menu li a {
   color: var(--cor--branca);
   text-decoration: none;
-  transition: color 0.3s ease;
 }
 
 .navbar .menu li a:hover {
   color: #c02809;
 }
 
-/* Banner */
+
 .banner {
   color: var(--cor--branca);
   height: 80vh;
@@ -67,7 +66,7 @@ height: 48px;
 
 .banner-content img{
   width: 250px;
-  height: 175px;
+  height: 200px;
   
 }
 .banner-content h2 {
@@ -87,17 +86,21 @@ height: 48px;
   color: var(--cor--branca);
   text-decoration: none;
   border-radius: 8px;
-  transition: background 0.3s ease;
 }
 
 .btn:hover {
   background: #f61f03;
 }
 
-/* Destaques */
+
 .destaques {
   padding: 4rem 2rem;
   text-align: center;
+}
+
+.destaques h3, h2 {
+  margin-bottom: 2rem;
+  color: var(--cor--branca);
 }
 
 .cards {
@@ -130,9 +133,10 @@ height: 48px;
 
 .card p {
   padding: 0 1rem 1rem;
+  
 }
 
-/* Footer */
+
 footer {
   background: #111;
   color: var(--cor--branca);
@@ -187,16 +191,9 @@ footer {
 .formulario input,
 .formulario textarea {
   padding: 0.75rem;
-  border: 1px solid var(--cor--branca);
+  border: 1px solid var(--cor--cinza);
   border-radius: 8px;
   font-size: 1rem;
-}
-
-.formulario input:focus,
-.formulario textarea:focus {
-  outline: none;
-  border-color: #ffcc00;
-  box-shadow: 0 0 0 2px #ffcc0044;
 }
 
 .formulario .btn {
@@ -206,7 +203,7 @@ footer {
 
 .card h4 {
   margin: 1rem;
-  color: var(--cor--branca);
+  color: var(--cor--preta);
   font-weight: 600;
 }
 
@@ -279,4 +276,8 @@ footer {
   object-fit: cover;
   border-radius: 100px;
  
+}
+article.card img {
+  border-radius: 10px;
+  margin-top: 10px;
 }
